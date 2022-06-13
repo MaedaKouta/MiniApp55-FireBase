@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782B0E1CAEBB00E34AAF0080 /* Pods_MiniApp55_FireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9527C0BA28CEF7CCC9DE07CE /* Pods_MiniApp55_FireBase.framework */; };
 		875868832855B667008F27E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875868822855B667008F27E5 /* AppDelegate.swift */; };
 		875868852855B667008F27E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875868842855B667008F27E5 /* SceneDelegate.swift */; };
 		875868872855B667008F27E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875868862855B667008F27E5 /* ViewController.swift */; };
 		8758688A2855B667008F27E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 875868882855B667008F27E5 /* Main.storyboard */; };
 		8758688C2855B668008F27E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8758688B2855B668008F27E5 /* Assets.xcassets */; };
 		8758688F2855B668008F27E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8758688D2855B668008F27E5 /* LaunchScreen.storyboard */; };
+		875868972855B69F008F27E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 875868962855B69F008F27E5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08FAD20BD91ADEEB188CB1F1 /* Pods-MiniApp55-FireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp55-FireBase.release.xcconfig"; path = "Target Support Files/Pods-MiniApp55-FireBase/Pods-MiniApp55-FireBase.release.xcconfig"; sourceTree = "<group>"; };
 		8758687F2855B667008F27E5 /* MiniApp55-FireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp55-FireBase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		875868822855B667008F27E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875868842855B667008F27E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		8758688B2855B668008F27E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8758688E2855B668008F27E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		875868902855B668008F27E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		875868962855B69F008F27E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9527C0BA28CEF7CCC9DE07CE /* Pods_MiniApp55_FireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniApp55_FireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69020E9790EF1E93591FAFF /* Pods-MiniApp55-FireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp55-FireBase.debug.xcconfig"; path = "Target Support Files/Pods-MiniApp55-FireBase/Pods-MiniApp55-FireBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782B0E1CAEBB00E34AAF0080 /* Pods_MiniApp55_FireBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B4A6D31B28F93902449AE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F69020E9790EF1E93591FAFF /* Pods-MiniApp55-FireBase.debug.xcconfig */,
+				08FAD20BD91ADEEB188CB1F1 /* Pods-MiniApp55-FireBase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0C6B4EC4190F449D46FF8810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9527C0BA28CEF7CCC9DE07CE /* Pods_MiniApp55_FireBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		875868762855B667008F27E5 = {
 			isa = PBXGroup;
 			children = (
 				875868812855B667008F27E5 /* MiniApp55-FireBase */,
 				875868802855B667008F27E5 /* Products */,
+				00B4A6D31B28F93902449AE6 /* Pods */,
+				0C6B4EC4190F449D46FF8810 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				8758688B2855B668008F27E5 /* Assets.xcassets */,
 				8758688D2855B668008F27E5 /* LaunchScreen.storyboard */,
 				875868902855B668008F27E5 /* Info.plist */,
+				875868962855B69F008F27E5 /* GoogleService-Info.plist */,
 			);
 			path = "MiniApp55-FireBase";
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 875868932855B668008F27E5 /* Build configuration list for PBXNativeTarget "MiniApp55-FireBase" */;
 			buildPhases = (
+				25FDB3689A2B9C462EF4F6F5 /* [CP] Check Pods Manifest.lock */,
 				8758687B2855B667008F27E5 /* Sources */,
 				8758687C2855B667008F27E5 /* Frameworks */,
 				8758687D2855B667008F27E5 /* Resources */,
+				2043D816F5CE98B7ADFF2042 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8758687A2855B667008F27E5 /* Build configuration list for PBXProject "MiniApp55-FireBase" */;
+			buildConfigurationList = 8758687A2855B667008F27E5 /* Build configuration list for PBXProject "TryApp-ChatWithFireBase" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8758688F2855B668008F27E5 /* LaunchScreen.storyboard in Resources */,
+				875868972855B69F008F27E5 /* GoogleService-Info.plist in Resources */,
 				8758688C2855B668008F27E5 /* Assets.xcassets in Resources */,
 				8758688A2855B667008F27E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2043D816F5CE98B7ADFF2042 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp55-FireBase/Pods-MiniApp55-FireBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp55-FireBase/Pods-MiniApp55-FireBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniApp55-FireBase/Pods-MiniApp55-FireBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25FDB3689A2B9C462EF4F6F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniApp55-FireBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8758687B2855B667008F27E5 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		875868942855B668008F27E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69020E9790EF1E93591FAFF /* Pods-MiniApp55-FireBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		875868952855B668008F27E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FAD20BD91ADEEB188CB1F1 /* Pods-MiniApp55-FireBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8758687A2855B667008F27E5 /* Build configuration list for PBXProject "MiniApp55-FireBase" */ = {
+		8758687A2855B667008F27E5 /* Build configuration list for PBXProject "TryApp-ChatWithFireBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				875868912855B668008F27E5 /* Debug */,
