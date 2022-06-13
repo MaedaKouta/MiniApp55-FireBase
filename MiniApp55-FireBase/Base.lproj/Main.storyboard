@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ログイン-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniApp55_FireBase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MiniApp55_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,33 +48,36 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ログイン"/>
                                 <connections>
-                                    <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mh8-Yb-KSb"/>
+                                    <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SC5-yU-bRb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuR-3G-kpC">
-                                <rect key="frame" x="103" y="451" width="210" height="31"/>
+                                <rect key="frame" x="11" y="451" width="375" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="アカウント作成の方はこちら"/>
+                                <connections>
+                                    <segue destination="Od9-i0-SkF" kind="show" id="cch-dR-mh7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2EH-bk-rXj"/>
+                    <navigationItem key="navigationItem" title="ログイン" id="2EH-bk-rXj"/>
                     <connections>
-                        <outlet property="nameTextField" destination="UGV-sP-3ZU" id="AAH-16-oJw"/>
-                        <outlet property="passwordTextField" destination="8gd-kZ-yXa" id="6xf-it-tiQ"/>
+                        <outlet property="nameTextField" destination="UGV-sP-3ZU" id="6Zj-Q4-k0K"/>
+                        <outlet property="passwordTextField" destination="8gd-kZ-yXa" id="zQq-XQ-Yx3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="78"/>
+            <point key="canvasLocation" x="827.536231884058" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--サインアップ-->
         <scene sceneID="gLp-nn-DMy">
             <objects>
-                <viewController id="Od9-i0-SkF" sceneMemberID="viewController">
+                <viewController id="Od9-i0-SkF" customClass="SignUpViewController" customModule="MiniApp55_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFT-aN-krX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,13 +120,18 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="アカウント作成"/>
                                 <connections>
-                                    <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y46-Zz-h7o"/>
+                                    <action selector="didTapSingnUpButton:" destination="Od9-i0-SkF" eventType="touchUpInside" id="ywO-8p-LHz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Rl-mT-dyK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="サインアップ" id="z1h-B5-Wvu"/>
+                    <connections>
+                        <outlet property="mailTextField" destination="g6D-ib-01x" id="Wdp-Q6-RMx"/>
+                        <outlet property="passwordTextField" destination="gzf-cE-vPC" id="rhm-NZ-hMY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6DM-t9-Dl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +192,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NN3-Hk-N8C"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FOi-8x-4sM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZe-ec-d5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

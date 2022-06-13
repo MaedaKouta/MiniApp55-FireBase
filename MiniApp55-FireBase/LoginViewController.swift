@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  MiniApp55-FireBase
 //
-//  Created by 前田航汰 on 2022/06/12.
+//  Created by 前田航汰 on 2022/06/13.
 //
 
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -18,20 +18,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
-    }
-
     @IBAction func didTapLoginButton(_ sender: Any) {
     }
 
     func login() {
         Auth.auth().signInAnonymously {(result, error) in
-            
-        }
-        }
 
+        }
     }
+
 }
+
 
