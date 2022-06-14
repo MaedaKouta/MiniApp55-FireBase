@@ -23,6 +23,11 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: mail, password: password) { authResult, error in
             if authResult?.user != nil {
                 print("成功")
+
+                let storyboard: UIStoryboard = self.storyboard!
+                let nextView = storyboard.instantiateViewController(withIdentifier: "AddTweetViewController") as! AddTweetViewController
+                self.present(nextView, animated: true, completion: nil)
+
             } else {
                 print("失敗")
             }

@@ -42,5 +42,9 @@ class SignUpViewController: UIViewController {
         }
     }
 
+    @IBAction func didTapSingnInButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
 }
 
