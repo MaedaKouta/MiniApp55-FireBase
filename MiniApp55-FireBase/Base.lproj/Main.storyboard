@@ -66,7 +66,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ログイン" id="2EH-bk-rXj"/>
                     <connections>
-                        <outlet property="nameTextField" destination="UGV-sP-3ZU" id="6Zj-Q4-k0K"/>
+                        <outlet property="mailTextField" destination="UGV-sP-3ZU" id="6Zj-Q4-k0K"/>
                         <outlet property="passwordTextField" destination="8gd-kZ-yXa" id="zQq-XQ-Yx3"/>
                     </connections>
                 </viewController>
@@ -140,6 +140,7 @@
         <!--View Controller-->
         <scene sceneID="ajG-81-PHA">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sog-cO-C1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="jEF-uH-EgM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3N-N4-RjM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -177,9 +178,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sog-cO-C1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605.7971014492755" y="78.348214285714278"/>
+            <point key="canvasLocation" x="2519" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PP6-IH-0TA">

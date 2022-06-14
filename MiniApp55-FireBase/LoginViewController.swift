@@ -10,19 +10,22 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var mailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func didTapLoginButton(_ sender: Any) {
+        let mail = mailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        signIn(mail, password)
     }
 
-    func login() {
-        Auth.auth().signInAnonymously {(result, error) in
-
+    func signIn(_ mail: String, _ password: String) {
+        Auth.auth().signIn(withEmail: mail, password: password) { authResult, error in
+            if authResult?.user != nil {
+                print("成功")
+            } else {
+                print("失敗")
+            }
         }
     }
 

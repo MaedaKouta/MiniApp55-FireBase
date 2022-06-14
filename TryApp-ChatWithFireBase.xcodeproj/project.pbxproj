@@ -14,6 +14,7 @@
 		8758688C2855B668008F27E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8758688B2855B668008F27E5 /* Assets.xcassets */; };
 		8758688F2855B668008F27E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8758688D2855B668008F27E5 /* LaunchScreen.storyboard */; };
 		875868972855B69F008F27E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 875868962855B69F008F27E5 /* GoogleService-Info.plist */; };
+		8787EB6F28580F7D00540326 /* AddTweet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8787EB6E28580F7D00540326 /* AddTweet.storyboard */; };
 		87ABCDAA2856EEA300CE84B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABCDA92856EEA300CE84B1 /* LoginViewController.swift */; };
 		87ABCDAC2856EEAF00CE84B1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABCDAB2856EEAF00CE84B1 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		8758688E2855B668008F27E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		875868902855B668008F27E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		875868962855B69F008F27E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8787EB6E28580F7D00540326 /* AddTweet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTweet.storyboard; sourceTree = "<group>"; };
 		87ABCDA92856EEA300CE84B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87ABCDAB2856EEAF00CE84B1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9527C0BA28CEF7CCC9DE07CE /* Pods_MiniApp55_FireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniApp55_FireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				875868822855B667008F27E5 /* AppDelegate.swift */,
 				875868842855B667008F27E5 /* SceneDelegate.swift */,
 				875868882855B667008F27E5 /* Main.storyboard */,
+				8787EB6E28580F7D00540326 /* AddTweet.storyboard */,
 				8758688B2855B668008F27E5 /* Assets.xcassets */,
 				8758688D2855B668008F27E5 /* LaunchScreen.storyboard */,
 				875868902855B668008F27E5 /* Info.plist */,
@@ -161,6 +164,7 @@
 				875868972855B69F008F27E5 /* GoogleService-Info.plist in Resources */,
 				8758688C2855B668008F27E5 /* Assets.xcassets in Resources */,
 				8758688A2855B667008F27E5 /* Main.storyboard in Resources */,
+				8787EB6F28580F7D00540326 /* AddTweet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
