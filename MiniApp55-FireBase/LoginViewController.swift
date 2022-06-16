@@ -21,9 +21,12 @@ class LoginViewController: UIViewController {
 
     func signIn(_ mail: String, _ password: String) {
         Auth.auth().signIn(withEmail: mail, password: password) { authResult, error in
-            if authResult?.user != nil {
+            if let user = authResult?.user{
+                if user.isEmailVerified == false {
+                    print("メール認証を済ませよ")
+                    return
+                }
                 print("成功")
-
                 let storyboard: UIStoryboard = self.storyboard!
                 let nextView = storyboard.instantiateViewController(withIdentifier: "AddTweetViewController") as! AddTweetViewController
                 self.present(nextView, animated: true, completion: nil)

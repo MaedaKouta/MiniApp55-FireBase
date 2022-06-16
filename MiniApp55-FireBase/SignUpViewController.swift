@@ -46,6 +46,8 @@ class SignUpViewController: UIViewController {
                 user.sendEmailVerification(completion: { error in
                     if error == nil {
                         print("送信成功しました")
+                        print(user.isEmailVerified)
+                        print(user.isAnonymous)
                     } else {
                         print("メール失敗")
                     }
