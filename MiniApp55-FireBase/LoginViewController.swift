@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
@@ -35,6 +37,31 @@ class LoginViewController: UIViewController {
                 print("失敗")
             }
         }
+    }
+
+    @IBAction func didTapSoginButton(_ sender: Any) {
+        auth()
+    }
+
+    private func auth() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        let config = GIDConfiguration(clientID: clientID)
+
+        GIDSignIn.sharedInstance.signIn(with: config, presenting: self) { [unowned self] user, error in
+            if let error = error {
+                print("GIDSignInError: \(error.localizedDescription)")
+                return
+            }
+
+            guard let authentication = user?.authentication,
+                  let idToken = authentication.idToken else { return }
+
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
+            self.login(credential: credential)
+        }
+    }
+    private func login(credential: AuthCredential) {
+        print("ログイン完了")
     }
 
 }

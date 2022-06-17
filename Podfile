@@ -12,5 +12,6 @@ pod 'Firebase/Firestore'
 pod 'EMAlertController' 
    pod 'Firebase/Analytics'
    pod 'UICircularProgressRing'
+   pod 'GoogleSignIn'
 
 end
